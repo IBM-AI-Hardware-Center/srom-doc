@@ -1,0 +1,42 @@
+Automation
+============
+
+Auto Regression
+----------------------------
+
+.. automodule:: auto.auto_regression
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Auto Classification
+--------------------------------
+
+.. automodule:: auto.auto_classification
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Auto Clustering
+---------------------
+
+.. automodule:: auto.auto_gmm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Auto Imbalanced Classification
+--------------------------------------------
+
+.. automodule:: auto.auto_imbalanced_classification
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Auto Imputation
+----------------------------
+
+.. automodule:: auto.auto_imputation
+   :members:
+   :undoc-members:
+   :show-inheritance:

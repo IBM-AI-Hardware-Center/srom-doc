@@ -1,0 +1,101 @@
+pipeline.execution\_types package
+=================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pipeline.execution_types.exploration
+
+Submodules
+----------
+
+pipeline.execution\_types.bayesian\_model\_selection module
+-----------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.bayesian_model_selection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.evolutionary\_model\_selection module
+---------------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.evolutionary_model_selection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.hyperband\_model\_selection module
+------------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.hyperband_model_selection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.pipeline\_scorers module
+--------------------------------------------------
+
+.. automodule:: pipeline.execution_types.pipeline_scorers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.rbfopt\_model\_selection module
+---------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.rbfopt_model_selection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.srom\_dummy\_search module
+----------------------------------------------------
+
+.. automodule:: pipeline.execution_types.srom_dummy_search
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.srom\_lithops\_search module
+------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.srom_lithops_search
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.srom\_ray\_search module
+--------------------------------------------------
+
+.. automodule:: pipeline.execution_types.srom_ray_search
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.srom\_single\_node\_search module
+-----------------------------------------------------------
+
+.. automodule:: pipeline.execution_types.srom_single_node_search
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.execution\_types.srom\_spark\_search module
+----------------------------------------------------
+
+.. automodule:: pipeline.execution_types.srom_spark_search
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.execution_types
+   :members:
+   :undoc-members:
+   :show-inheritance:

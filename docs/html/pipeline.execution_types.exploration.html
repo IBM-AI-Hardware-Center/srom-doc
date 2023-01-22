@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta property="og:title" content="pipeline.execution_types.exploration package" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="pipeline.execution_types.exploration.html" />
+<meta property="og:site_name" content="SROM" />
+<meta property="og:description" content="Submodules: pipeline.execution_types.exploration.spark_search_functions module: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-de..." />
+<meta name="description" content="Submodules: pipeline.execution_types.exploration.spark_search_functions module: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-de..." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pipeline.execution_types.exploration package &mdash; SROM 1.7.6 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pipeline.hyper_params package" href="pipeline.hyper_params.html" />
+    <link rel="prev" title="pipeline.execution_types package" href="pipeline.execution_types.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SROM
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="pipeline.html">Core Pipeline</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.srom_pipeline">Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.graph">Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.srom_param_grid">Parameter Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.anomaly_pipeline">Anomaly Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.failure_pattern_analysis">Failure Pattern Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_anomaly">Time Series Anomaly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_classifier">Time Series Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_prediction">Time Series Prediction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.transformed_target_pipeline">Transformed Target Pipeline</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pipeline.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pipeline.execution_types.html">pipeline.execution_types package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="pipeline.execution_types.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.bayesian_model_selection">pipeline.execution_types.bayesian_model_selection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.evolutionary_model_selection">pipeline.execution_types.evolutionary_model_selection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.hyperband_model_selection">pipeline.execution_types.hyperband_model_selection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.pipeline_scorers">pipeline.execution_types.pipeline_scorers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.rbfopt_model_selection">pipeline.execution_types.rbfopt_model_selection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_dummy_search">pipeline.execution_types.srom_dummy_search module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_lithops_search">pipeline.execution_types.srom_lithops_search module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_ray_search">pipeline.execution_types.srom_ray_search module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_single_node_search">pipeline.execution_types.srom_single_node_search module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_spark_search">pipeline.execution_types.srom_spark_search module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.hyper_params.html">pipeline.hyper_params package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.utils.html">pipeline.utils package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auto.html">Automation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SROM</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="pipeline.html">Core Pipeline</a> &raquo;</li>
+        
+          <li><a href="pipeline.execution_types.html">pipeline.execution_types package</a> &raquo;</li>
+        
+      <li>pipeline.execution_types.exploration package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pipeline.execution_types.exploration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="pipeline-execution-types-exploration-package">
+<h1>pipeline.execution_types.exploration package<a class="headerlink" href="#pipeline-execution-types-exploration-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-pipeline.execution_types.exploration.spark_search_functions">
+<span id="pipeline-execution-types-exploration-spark-search-functions-module"></span><h2>pipeline.execution_types.exploration.spark_search_functions module<a class="headerlink" href="#module-pipeline.execution_types.exploration.spark_search_functions" title="Permalink to this heading">¶</a></h2>
+<p>Attempt to workaround serialization issues in spark search.
+See</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.stefaanlippens.net/python-pickling-and-dealing-with-attributeerror-module-object-has-no-attribute-thing.html">https://www.stefaanlippens.net/python-pickling-and-dealing-with-attributeerror-module-object-has-no-attribute-thing.html</a></p>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.spark_search_functions.cv_learning">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.spark_search_functions.</span></span><span class="sig-name descname"><span class="pre">cv_learning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.spark_search_functions.cv_learning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs cross validation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – Tuple containing parameters and pipeline_index.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>output:</dt><dd><p>Shared resource for multiprocessing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.spark_search_functions.cv_learning_window">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.spark_search_functions.</span></span><span class="sig-name descname"><span class="pre">cv_learning_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.spark_search_functions.cv_learning_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs cross validation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – Tuple containing parameters and pipeline_index.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>output:</dt><dd><p>Shared resource for multiprocessing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.spark_search_functions.model_execution">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.spark_search_functions.</span></span><span class="sig-name descname"><span class="pre">model_execution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipelines_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.spark_search_functions.model_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs time bound execution of pipeline.     If cv_learning task is not completed in max_eval_time_minute_bc minutes     then that task is terminated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – (parameters, pipeline_index)
+parameters(list, dict): Pipeline grid combination parameters.
+pipeline_index (integer):Index for the pipeline for which cross                 validation is to be executed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pipeline_index (integer): Index for the pipeline for which cross                 validation is to be executed.
+parameters (list, dict): Pipeline grid combination parameters.
+score (integer): Mean test score or nan if execution time exceeds                 max_eval_time_minute_bc for processing.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple (pipeline_index, (parameters, score))</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.spark_search_functions.train_test_score">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.spark_search_functions.</span></span><span class="sig-name descname"><span class="pre">train_test_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.spark_search_functions.train_test_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs cross validation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – Tuple containing parameters and pipeline_index.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>output:</dt><dd><p>Shared resource for multiprocessing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pipeline.execution_types.exploration.srom_single_node_transform">
+<span id="pipeline-execution-types-exploration-srom-single-node-transform-module"></span><h2>pipeline.execution_types.exploration.srom_single_node_transform module<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_single_node_transform" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_single_node_transform.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Single node exploration.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform_async">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_single_node_transform.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_transform_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pipeline.execution_types.exploration.srom_spark_transform">
+<span id="pipeline-execution-types-exploration-srom-spark-transform-module"></span><h2>pipeline.execution_types.exploration.srom_spark_transform module<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_spark_transform" title="Permalink to this heading">¶</a></h2>
+<span class="target" id="module-srom_spark_search"></span><dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_spark_transform.pipeline_execution">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_spark_transform.</span></span><span class="sig-name descname"><span class="pre">pipeline_execution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_bc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_spark_transform.pipeline_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs time bound execution of pipeline.     If cv_learning task is not completed in max_eval_time_minute_bc minutes     then that task is terminated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – (parameters, pipeline_index)
+parameters(list, dict): Pipeline grid combination parameters.
+pipeline_index (integer):Index for the pipeline for which cross                 validation is to be executed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_spark_transform.srom_spark_transform">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_spark_transform.</span></span><span class="sig-name descname"><span class="pre">srom_spark_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_spark_transform.srom_spark_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
+<li><p><strong>sc</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
+<li><p><strong>paths</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
+<li><p><strong>param_grid</strong> (<em>[</em><em>type</em><em>]</em><em>, </em><em>optional</em>) – [description]. Defaults to None.</p></li>
+<li><p><strong>total_execution_time</strong> (<em>int</em><em>, </em><em>optional</em>) – [description]. Defaults to 10.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IncorrectValueException</strong> – [description]</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_spark_transform.srom_spark_transform_async">
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_spark_transform.</span></span><span class="sig-name descname"><span class="pre">srom_spark_transform_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_spark_transform.srom_spark_transform_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchroneous version of srom_spark_transform
+:param X: [description]
+:type X: [type]
+:param sc: [description]
+:type sc: [type]
+:param paths: [description]
+:type paths: [type]
+:param param_grid: [description]. Defaults to None.
+:type param_grid: [type], optional
+:param total_execution_time: [description]. Defaults to 10.
+:type total_execution_time: int, optional</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>IncorrectValueException</strong> – [description]</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pipeline.execution_types.exploration">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pipeline.execution_types.exploration" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pipeline.hyper_params.html" class="btn btn-neutral float-right" title="pipeline.hyper_params package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pipeline.execution_types.html" class="btn btn-neutral float-left" title="pipeline.execution_types package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright .
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
