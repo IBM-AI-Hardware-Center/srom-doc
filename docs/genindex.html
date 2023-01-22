@@ -87,7 +87,9 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Core Pipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="auto.html">Automation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="specialized_pipeline.html">Specialized Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto.html">Automation Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.execution_types.html">Pipeline Execution</a></li>
 </ul>
 
             
@@ -181,27 +183,27 @@
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.add_input_meta_data">add_input_meta_data() (pipeline.srom_pipeline.SROMPipeline method)</a>
 
       <ul>
-        <li><a href="pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_input_meta_data">(pipeline.time_series_prediction.TimeSeriesPredictionPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_input_meta_data">(pipeline.time_series_prediction.TimeSeriesPredictionPipeline method)</a>
 </li>
       </ul></li>
       <li><a href="pipeline.html#pipeline.graph.SROMGraph.add_stages">add_stages() (pipeline.graph.SROMGraph method)</a>
 
       <ul>
-        <li><a href="pipeline.html#pipeline.time_series_anomaly.TimeSeriesAnomaly.add_stages">(pipeline.time_series_anomaly.TimeSeriesAnomaly method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.time_series_anomaly.TimeSeriesAnomaly.add_stages">(pipeline.time_series_anomaly.TimeSeriesAnomaly method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.time_series_classifier.TimeSeriesClassificationPipeline.add_stages">(pipeline.time_series_classifier.TimeSeriesClassificationPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.time_series_classifier.TimeSeriesClassificationPipeline.add_stages">(pipeline.time_series_classifier.TimeSeriesClassificationPipeline method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_stages">(pipeline.time_series_prediction.TimeSeriesPredictionPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_stages">(pipeline.time_series_prediction.TimeSeriesPredictionPipeline method)</a>
 </li>
       </ul></li>
       <li>
     anomaly_pipeline
 
       <ul>
-        <li><a href="pipeline.html#module-anomaly_pipeline">module</a>
+        <li><a href="specialized_pipeline.html#module-anomaly_pipeline">module</a>
 </li>
       </ul></li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline">AnomalyPipeline (class in pipeline.anomaly_pipeline)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline">AnomalyPipeline (class in pipeline.anomaly_pipeline)</a>
 </li>
       <li><a href="pipeline.html#pipeline.graph.SROMGraph.asimage">asimage() (pipeline.graph.SROMGraph method)</a>
 </li>
@@ -321,7 +323,7 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.create_graph">create_graph() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.create_graph">create_graph() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 
       <ul>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.create_graph">(pipeline.srom_pipeline.SROMPipeline method)</a>
@@ -335,9 +337,7 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.custom_loss_func">custom_loss_func() (in module pipeline.anomaly_pipeline)</a>
-</li>
-      <li><a href="pipeline.execution_types.html#pipeline.execution_types.pipeline_scorers.cv">cv() (in module pipeline.execution_types.pipeline_scorers)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.custom_loss_func">custom_loss_func() (in module pipeline.anomaly_pipeline)</a>
 </li>
       <li><a href="pipeline.execution_types.html#pipeline.execution_types.srom_lithops_search.cv_cf">cv_cf() (in module pipeline.execution_types.srom_lithops_search)</a>
 </li>
@@ -388,10 +388,10 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pipeline.execution_types.html#pipeline.execution_types.evolutionary_model_selection.evolutionary_search_async">evolutionary_search_async() (in module pipeline.execution_types.evolutionary_model_selection)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.execute">execute() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.execute">execute() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 
       <ul>
-        <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.execute">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.execute">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 </li>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.execute">(pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
@@ -410,10 +410,10 @@
     failure_pattern_analysis
 
       <ul>
-        <li><a href="pipeline.html#module-failure_pattern_analysis">module</a>
+        <li><a href="specialized_pipeline.html#module-failure_pattern_analysis">module</a>
 </li>
       </ul></li>
-      <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline">FailurePatternAnalysisPipeline (class in pipeline.failure_pattern_analysis)</a>
+      <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline">FailurePatternAnalysisPipeline (class in pipeline.failure_pattern_analysis)</a>
 </li>
       <li><a href="auto.html#auto.auto_classification.AutoClassification.fit">fit() (auto.auto_classification.AutoClassification method)</a>
 
@@ -426,11 +426,11 @@
 </li>
         <li><a href="auto.html#auto.auto_regression.AutoRegression.fit">(auto.auto_regression.AutoRegression method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.fit">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.fit">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 </li>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.fit">(pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.fit">(pipeline.transformed_target_pipeline.TransformedTarget method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.fit">(pipeline.transformed_target_pipeline.TransformedTarget method)</a>
 </li>
         <li><a href="pipeline.utils.html#pipeline.utils.functional_pipeline.FunctionPipeline.fit">(pipeline.utils.functional_pipeline.FunctionPipeline method)</a>
 </li>
@@ -461,7 +461,7 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.generate_base_anomaly_score_statistics">generate_base_anomaly_score_statistics() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.generate_base_anomaly_score_statistics">generate_base_anomaly_score_statistics() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 </li>
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.get_best_estimator">get_best_estimator() (pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
@@ -475,11 +475,11 @@
 </li>
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.get_best_score">get_best_score() (pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.get_best_thresholds">get_best_thresholds() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.get_best_thresholds">get_best_thresholds() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.get_feature_engineered_table">get_feature_engineered_table() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.get_feature_engineered_table">get_feature_engineered_table() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 </li>
       <li><a href="pipeline.html#pipeline.srom_param_grid.SROMParamGrid.get_param">get_param() (pipeline.srom_param_grid.SROMParamGrid method)</a>
 </li>
@@ -531,7 +531,7 @@
     module
 
       <ul>
-        <li><a href="pipeline.html#module-anomaly_pipeline">anomaly_pipeline</a>
+        <li><a href="specialized_pipeline.html#module-anomaly_pipeline">anomaly_pipeline</a>
 </li>
         <li><a href="auto.html#module-auto.auto_classification">auto.auto_classification</a>
 </li>
@@ -555,15 +555,13 @@
 </li>
         <li><a href="pipeline.execution_types.html#module-evolutionary_model_selection">evolutionary_model_selection</a>
 </li>
-        <li><a href="pipeline.html#module-failure_pattern_analysis">failure_pattern_analysis</a>
+        <li><a href="specialized_pipeline.html#module-failure_pattern_analysis">failure_pattern_analysis</a>
 </li>
         <li><a href="pipeline.html#module-graph">graph</a>
 </li>
         <li><a href="pipeline.execution_types.html#module-hyperband_model_selection">hyperband_model_selection</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.anomaly_pipeline">pipeline.anomaly_pipeline</a>
-</li>
-        <li><a href="pipeline.execution_types.html#module-pipeline.execution_types">pipeline.execution_types</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.anomaly_pipeline">pipeline.anomaly_pipeline</a>
 </li>
         <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.bayesian_model_selection">pipeline.execution_types.bayesian_model_selection</a>
 </li>
@@ -579,8 +577,6 @@
 </li>
         <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.hyperband_model_selection">pipeline.execution_types.hyperband_model_selection</a>
 </li>
-        <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.pipeline_scorers">pipeline.execution_types.pipeline_scorers</a>
-</li>
         <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.rbfopt_model_selection">pipeline.execution_types.rbfopt_model_selection</a>
 </li>
         <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.srom_dummy_search">pipeline.execution_types.srom_dummy_search</a>
@@ -593,57 +589,21 @@
 </li>
         <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.srom_spark_search">pipeline.execution_types.srom_spark_search</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.failure_pattern_analysis">pipeline.failure_pattern_analysis</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.failure_pattern_analysis">pipeline.failure_pattern_analysis</a>
 </li>
         <li><a href="pipeline.html#module-pipeline.graph">pipeline.graph</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params">pipeline.hyper_params</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.anomaly_detection_fine_grid">pipeline.hyper_params.anomaly_detection_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.anomaly_detection_sample_grid_for_rbfopt">pipeline.hyper_params.anomaly_detection_sample_grid_for_rbfopt</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_fine_grid">pipeline.hyper_params.classification_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_fine_grid_for_bayesian">pipeline.hyper_params.classification_fine_grid_for_bayesian</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_sample_grid_for_rbfopt">pipeline.hyper_params.classification_sample_grid_for_rbfopt</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.clustering_fine_grid">pipeline.hyper_params.clustering_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imbalanced_fine_grid">pipeline.hyper_params.imbalanced_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid">pipeline.hyper_params.imputation_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid_for_bayesian">pipeline.hyper_params.imputation_fine_grid_for_bayesian</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid_for_rbfopt">pipeline.hyper_params.imputation_fine_grid_for_rbfopt</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_iid_grid">pipeline.hyper_params.imputation_iid_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_time_series_grid">pipeline.hyper_params.imputation_time_series_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_fine_grid">pipeline.hyper_params.regression_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_fine_grid_for_bayesian">pipeline.hyper_params.regression_fine_grid_for_bayesian</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_sample_grid_for_rbfopt">pipeline.hyper_params.regression_sample_grid_for_rbfopt</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.survival_analysis_fine_grid">pipeline.hyper_params.survival_analysis_fine_grid</a>
-</li>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.time_series_prediction_fine_grid">pipeline.hyper_params.time_series_prediction_fine_grid</a>
 </li>
         <li><a href="pipeline.html#module-pipeline.srom_param_grid">pipeline.srom_param_grid</a>
 </li>
         <li><a href="pipeline.html#module-pipeline.srom_pipeline">pipeline.srom_pipeline</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.time_series_anomaly">pipeline.time_series_anomaly</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_anomaly">pipeline.time_series_anomaly</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.time_series_classifier">pipeline.time_series_classifier</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_classifier">pipeline.time_series_classifier</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.time_series_prediction">pipeline.time_series_prediction</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_prediction">pipeline.time_series_prediction</a>
 </li>
-        <li><a href="pipeline.html#module-pipeline.transformed_target_pipeline">pipeline.transformed_target_pipeline</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.transformed_target_pipeline">pipeline.transformed_target_pipeline</a>
 </li>
         <li><a href="pipeline.utils.html#module-pipeline.utils">pipeline.utils</a>
 </li>
@@ -665,9 +625,9 @@
 </li>
         <li><a href="pipeline.execution_types.exploration.html#module-srom_spark_search">srom_spark_search</a>, <a href="pipeline.execution_types.html#module-srom_spark_search">[1]</a>
 </li>
-        <li><a href="pipeline.html#module-time_series_classification">time_series_classification</a>
+        <li><a href="specialized_pipeline.html#module-time_series_classification">time_series_classification</a>
 </li>
-        <li><a href="pipeline.html#module-0">time_series_prediction</a>, <a href="pipeline.html#module-time_series_prediction">[1]</a>
+        <li><a href="specialized_pipeline.html#module-0">time_series_prediction</a>, <a href="specialized_pipeline.html#module-time_series_prediction">[1]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -698,14 +658,7 @@
     pipeline.anomaly_pipeline
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.anomaly_pipeline">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.execution_types
-
-      <ul>
-        <li><a href="pipeline.execution_types.html#module-pipeline.execution_types">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.anomaly_pipeline">module</a>
 </li>
       </ul></li>
       <li>
@@ -758,13 +711,6 @@
 </li>
       </ul></li>
       <li>
-    pipeline.execution_types.pipeline_scorers
-
-      <ul>
-        <li><a href="pipeline.execution_types.html#module-pipeline.execution_types.pipeline_scorers">module</a>
-</li>
-      </ul></li>
-      <li>
     pipeline.execution_types.rbfopt_model_selection
 
       <ul>
@@ -810,7 +756,7 @@
     pipeline.failure_pattern_analysis
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.failure_pattern_analysis">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.failure_pattern_analysis">module</a>
 </li>
       </ul></li>
       <li>
@@ -818,134 +764,6 @@
 
       <ul>
         <li><a href="pipeline.html#module-pipeline.graph">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.anomaly_detection_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.anomaly_detection_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.anomaly_detection_sample_grid_for_rbfopt
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.anomaly_detection_sample_grid_for_rbfopt">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.classification_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.classification_fine_grid_for_bayesian
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_fine_grid_for_bayesian">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.classification_sample_grid_for_rbfopt
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.classification_sample_grid_for_rbfopt">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.clustering_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.clustering_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.imbalanced_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imbalanced_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.imputation_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.imputation_fine_grid_for_bayesian
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid_for_bayesian">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.imputation_fine_grid_for_rbfopt
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_fine_grid_for_rbfopt">module</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    pipeline.hyper_params.imputation_iid_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_iid_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.imputation_time_series_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.imputation_time_series_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.regression_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.regression_fine_grid_for_bayesian
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_fine_grid_for_bayesian">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.regression_sample_grid_for_rbfopt
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.regression_sample_grid_for_rbfopt">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.survival_analysis_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.survival_analysis_fine_grid">module</a>
-</li>
-      </ul></li>
-      <li>
-    pipeline.hyper_params.time_series_prediction_fine_grid
-
-      <ul>
-        <li><a href="pipeline.hyper_params.html#module-pipeline.hyper_params.time_series_prediction_fine_grid">module</a>
 </li>
       </ul></li>
       <li>
@@ -966,28 +784,30 @@
     pipeline.time_series_anomaly
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.time_series_anomaly">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_anomaly">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     pipeline.time_series_classifier
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.time_series_classifier">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_classifier">module</a>
 </li>
       </ul></li>
       <li>
     pipeline.time_series_prediction
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.time_series_prediction">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.time_series_prediction">module</a>
 </li>
       </ul></li>
       <li>
     pipeline.transformed_target_pipeline
 
       <ul>
-        <li><a href="pipeline.html#module-pipeline.transformed_target_pipeline">module</a>
+        <li><a href="specialized_pipeline.html#module-pipeline.transformed_target_pipeline">module</a>
 </li>
       </ul></li>
       <li>
@@ -1040,19 +860,19 @@
 </li>
         <li><a href="auto.html#auto.auto_regression.AutoRegression.predict">(auto.auto_regression.AutoRegression method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.predict">(pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.predict">(pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 </li>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.predict">(pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-        <li><a href="pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.predict">(pipeline.transformed_target_pipeline.TransformedTarget method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.predict">(pipeline.transformed_target_pipeline.TransformedTarget method)</a>
 </li>
       </ul></li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.predict_proba">predict_proba() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.predict_proba">predict_proba() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 
       <ul>
-        <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict_proba">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+        <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict_proba">(pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 </li>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.predict_proba">(pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
@@ -1128,7 +948,7 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.score">score() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.score">score() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 
       <ul>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.score">(pipeline.srom_pipeline.SROMPipeline method)</a>
@@ -1140,11 +960,11 @@
 </li>
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.set_best_model">set_best_model() (pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.set_best_thresholds">set_best_thresholds() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.set_best_thresholds">set_best_thresholds() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 </li>
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.set_cross_val_score">set_cross_val_score() (pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_cross_validation">set_cross_validation() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_cross_validation">set_cross_validation() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 
       <ul>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.set_cross_validation">(pipeline.srom_pipeline.SROMPipeline method)</a>
@@ -1166,13 +986,13 @@
 </li>
       <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.set_pipeline_type_for_path">set_pipeline_type_for_path() (pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.set_scoring">set_scoring() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.anomaly_pipeline.AnomalyPipeline.set_scoring">set_scoring() (pipeline.anomaly_pipeline.AnomalyPipeline method)</a>
 
       <ul>
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.set_scoring">(pipeline.srom_pipeline.SROMPipeline method)</a>
 </li>
       </ul></li>
-      <li><a href="pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_stages">set_stages() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
+      <li><a href="specialized_pipeline.html#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_stages">set_stages() (pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline method)</a>
 
       <ul>
         <li><a href="pipeline.html#pipeline.graph.SROMGraph.set_stages">(pipeline.graph.SROMGraph method)</a>
@@ -1258,7 +1078,7 @@
         <li><a href="pipeline.html#pipeline.srom_pipeline.SROMPipeline.stages">(pipeline.srom_pipeline.SROMPipeline property)</a>
 </li>
       </ul></li>
-      <li><a href="pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.steps">steps (pipeline.transformed_target_pipeline.TransformedTarget attribute)</a>
+      <li><a href="specialized_pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget.steps">steps (pipeline.transformed_target_pipeline.TransformedTarget attribute)</a>
 
       <ul>
         <li><a href="pipeline.utils.html#pipeline.utils.functional_pipeline.FunctionPipeline.steps">(pipeline.utils.functional_pipeline.FunctionPipeline attribute)</a>
@@ -1292,14 +1112,14 @@
     time_series_classification
 
       <ul>
-        <li><a href="pipeline.html#module-time_series_classification">module</a>
+        <li><a href="specialized_pipeline.html#module-time_series_classification">module</a>
 </li>
       </ul></li>
       <li>
     time_series_prediction
 
       <ul>
-        <li><a href="pipeline.html#module-0">module</a>, <a href="pipeline.html#module-time_series_prediction">[1]</a>
+        <li><a href="specialized_pipeline.html#module-0">module</a>, <a href="specialized_pipeline.html#module-time_series_prediction">[1]</a>
 </li>
       </ul></li>
       <li><a href="pipeline.execution_types.html#pipeline.execution_types.srom_single_node_search.timebound_fit">timebound_fit() (in module pipeline.execution_types.srom_single_node_search)</a>
@@ -1308,17 +1128,17 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pipeline.execution_types.html#pipeline.execution_types.srom_spark_search.timebound_model_execution">timebound_model_execution() (in module pipeline.execution_types.srom_spark_search)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.time_series_anomaly.TimeSeriesAnomaly">TimeSeriesAnomaly (class in pipeline.time_series_anomaly)</a>
+      <li><a href="specialized_pipeline.html#pipeline.time_series_anomaly.TimeSeriesAnomaly">TimeSeriesAnomaly (class in pipeline.time_series_anomaly)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.time_series_classifier.TimeSeriesClassificationPipeline">TimeSeriesClassificationPipeline (class in pipeline.time_series_classifier)</a>
+      <li><a href="specialized_pipeline.html#pipeline.time_series_classifier.TimeSeriesClassificationPipeline">TimeSeriesClassificationPipeline (class in pipeline.time_series_classifier)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline">TimeSeriesPredictionPipeline (class in pipeline.time_series_prediction)</a>
+      <li><a href="specialized_pipeline.html#pipeline.time_series_prediction.TimeSeriesPredictionPipeline">TimeSeriesPredictionPipeline (class in pipeline.time_series_prediction)</a>
 </li>
       <li><a href="pipeline.execution_types.exploration.html#pipeline.execution_types.exploration.spark_search_functions.train_test_score">train_test_score() (in module pipeline.execution_types.exploration.spark_search_functions)</a>
 </li>
       <li><a href="auto.html#auto.auto_imputation.AutoImputation.transform">transform() (auto.auto_imputation.AutoImputation method)</a>
 </li>
-      <li><a href="pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget">TransformedTarget (class in pipeline.transformed_target_pipeline)</a>
+      <li><a href="specialized_pipeline.html#pipeline.transformed_target_pipeline.TransformedTarget">TransformedTarget (class in pipeline.transformed_target_pipeline)</a>
 </li>
   </ul></td>
 </tr></table>

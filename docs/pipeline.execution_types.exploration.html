@@ -5,16 +5,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<meta property="og:title" content="pipeline.execution_types.exploration package" />
+<meta property="og:title" content="Function Execution" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="pipeline.execution_types.exploration.html" />
 <meta property="og:site_name" content="SROM" />
-<meta property="og:description" content="Submodules: pipeline.execution_types.exploration.spark_search_functions module: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-de..." />
-<meta name="description" content="Submodules: pipeline.execution_types.exploration.spark_search_functions module: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-de..." />
+<meta property="og:description" content="Spark Search Function: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-dealing-with-attributeerror-module-object-has-no-attribute-..." />
+<meta name="description" content="Spark Search Function: Attempt to workaround serialization issues in spark search. See https://www.stefaanlippens.net/python-pickling-and-dealing-with-attributeerror-module-object-has-no-attribute-..." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>pipeline.execution_types.exploration package &mdash; SROM 1.7.6 documentation</title>
+  <title>Function Execution &mdash; SROM 1.7.6 documentation</title>
   
 
   
@@ -47,8 +47,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="pipeline.hyper_params package" href="pipeline.hyper_params.html" />
-    <link rel="prev" title="pipeline.execution_types package" href="pipeline.execution_types.html" /> 
+    <link rel="prev" title="Pipeline Execution" href="pipeline.execution_types.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,40 +94,31 @@
             
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="pipeline.html">Core Pipeline</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.srom_pipeline">Pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.graph">Graph</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.srom_param_grid">Parameter Grid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.anomaly_pipeline">Anomaly Pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.failure_pattern_analysis">Failure Pattern Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_anomaly">Time Series Anomaly</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_classifier">Time Series Classification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.time_series_prediction">Time Series Prediction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pipeline.html#module-pipeline.transformed_target_pipeline">Transformed Target Pipeline</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="pipeline.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="pipeline.execution_types.html">pipeline.execution_types package</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="pipeline.execution_types.html#subpackages">Subpackages</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.bayesian_model_selection">pipeline.execution_types.bayesian_model_selection module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.evolutionary_model_selection">pipeline.execution_types.evolutionary_model_selection module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.hyperband_model_selection">pipeline.execution_types.hyperband_model_selection module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.pipeline_scorers">pipeline.execution_types.pipeline_scorers module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.rbfopt_model_selection">pipeline.execution_types.rbfopt_model_selection module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_dummy_search">pipeline.execution_types.srom_dummy_search module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_lithops_search">pipeline.execution_types.srom_lithops_search module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_ray_search">pipeline.execution_types.srom_ray_search module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_single_node_search">pipeline.execution_types.srom_single_node_search module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_spark_search">pipeline.execution_types.srom_spark_search module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="pipeline.hyper_params.html">pipeline.hyper_params package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pipeline.utils.html">pipeline.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Core Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="specialized_pipeline.html">Specialized Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto.html">Automation Pipeline</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pipeline.execution_types.html">Pipeline Execution</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_single_node_search">Local</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_spark_search">Spark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_lithops_search">Serverless</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_ray_search">Ray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.bayesian_model_selection">Bayesian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.evolutionary_model_selection">Evolutionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.hyperband_model_selection">Hyperband</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.rbfopt_model_selection">RBFopt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.execution_types.html#module-pipeline.execution_types.srom_dummy_search">Dummy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pipeline.execution_types.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Function Execution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-pipeline.execution_types.exploration.spark_search_functions">Spark Search Function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-pipeline.execution_types.exploration.srom_single_node_transform">Local Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-pipeline.execution_types.exploration.srom_spark_transform">Spark Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-pipeline.execution_types.exploration">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="auto.html">Automation</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -177,11 +167,9 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="pipeline.html">Core Pipeline</a> &raquo;</li>
+          <li><a href="pipeline.execution_types.html">Pipeline Execution</a> &raquo;</li>
         
-          <li><a href="pipeline.execution_types.html">pipeline.execution_types package</a> &raquo;</li>
-        
-      <li>pipeline.execution_types.exploration package</li>
+      <li>Function Execution</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -200,13 +188,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="pipeline-execution-types-exploration-package">
-<h1>pipeline.execution_types.exploration package<a class="headerlink" href="#pipeline-execution-types-exploration-package" title="Permalink to this heading">¶</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
-</section>
+  <section id="function-execution">
+<h1>Function Execution<a class="headerlink" href="#function-execution" title="Permalink to this heading">¶</a></h1>
 <section id="module-pipeline.execution_types.exploration.spark_search_functions">
-<span id="pipeline-execution-types-exploration-spark-search-functions-module"></span><h2>pipeline.execution_types.exploration.spark_search_functions module<a class="headerlink" href="#module-pipeline.execution_types.exploration.spark_search_functions" title="Permalink to this heading">¶</a></h2>
+<span id="spark-search-function"></span><h2>Spark Search Function<a class="headerlink" href="#module-pipeline.execution_types.exploration.spark_search_functions" title="Permalink to this heading">¶</a></h2>
 <p>Attempt to workaround serialization issues in spark search.
 See</p>
 <blockquote>
@@ -280,7 +265,7 @@ score (integer): Mean test score or nan if execution time exceeds               
 
 </section>
 <section id="module-pipeline.execution_types.exploration.srom_single_node_transform">
-<span id="pipeline-execution-types-exploration-srom-single-node-transform-module"></span><h2>pipeline.execution_types.exploration.srom_single_node_transform module<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_single_node_transform" title="Permalink to this heading">¶</a></h2>
+<span id="local-transform"></span><h2>Local Transform<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_single_node_transform" title="Permalink to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform">
 <span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_single_node_transform.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_single_node_transform.srom_single_node_transform" title="Permalink to this definition">¶</a></dt>
@@ -294,7 +279,7 @@ score (integer): Mean test score or nan if execution time exceeds               
 
 </section>
 <section id="module-pipeline.execution_types.exploration.srom_spark_transform">
-<span id="pipeline-execution-types-exploration-srom-spark-transform-module"></span><h2>pipeline.execution_types.exploration.srom_spark_transform module<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_spark_transform" title="Permalink to this heading">¶</a></h2>
+<span id="spark-transform"></span><h2>Spark Transform<a class="headerlink" href="#module-pipeline.execution_types.exploration.srom_spark_transform" title="Permalink to this heading">¶</a></h2>
 <span class="target" id="module-srom_spark_search"></span><dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.exploration.srom_spark_transform.pipeline_execution">
 <span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.exploration.srom_spark_transform.</span></span><span class="sig-name descname"><span class="pre">pipeline_execution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_bc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.exploration.srom_spark_transform.pipeline_execution" title="Permalink to this definition">¶</a></dt>
@@ -373,8 +358,7 @@ pipeline_index (integer):Index for the pipeline for which cross                 
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pipeline.hyper_params.html" class="btn btn-neutral float-right" title="pipeline.hyper_params package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="pipeline.execution_types.html" class="btn btn-neutral float-left" title="pipeline.execution_types package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pipeline.execution_types.html" class="btn btn-neutral float-left" title="Pipeline Execution" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

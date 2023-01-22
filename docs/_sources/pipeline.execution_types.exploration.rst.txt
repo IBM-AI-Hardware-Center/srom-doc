@@ -1,10 +1,7 @@
-pipeline.execution\_types.exploration package
+Function Execution
 =============================================
 
-Submodules
-----------
-
-pipeline.execution\_types.exploration.spark\_search\_functions module
+Spark Search Function
 ---------------------------------------------------------------------
 
 .. automodule:: pipeline.execution_types.exploration.spark_search_functions
@@ -12,7 +9,7 @@ pipeline.execution\_types.exploration.spark\_search\_functions module
    :undoc-members:
    :show-inheritance:
 
-pipeline.execution\_types.exploration.srom\_single\_node\_transform module
+Local Transform
 --------------------------------------------------------------------------
 
 .. automodule:: pipeline.execution_types.exploration.srom_single_node_transform
@@ -20,7 +17,7 @@ pipeline.execution\_types.exploration.srom\_single\_node\_transform module
    :undoc-members:
    :show-inheritance:
 
-pipeline.execution\_types.exploration.srom\_spark\_transform module
+Spark Transform
 -------------------------------------------------------------------
 
 .. automodule:: pipeline.execution_types.exploration.srom_spark_transform

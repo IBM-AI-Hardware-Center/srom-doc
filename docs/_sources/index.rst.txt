@@ -11,7 +11,9 @@ Welcome to srom's documentation!
    :caption: Contents:
 
    pipeline
+   specialized_pipeline
    auto
+   pipeline.execution_types
 
 Indices and tables
 ==================
