@@ -17,7 +17,7 @@ Welcome to IBM SROM AI Toolkit's documentation!
    pipeline.execution_types
 
 
-*IBM SROM (Smarter Resource Operation Management) ToolKit* is an Python toolkit for
+*IBM SROM (Smarter Resource Operation Management) AI ToolKit* is an Python toolkit for
 exploring and using the capabilities of novel machine learning algorithms and pipelines. SROM provide a collection of solutions for intelligent machine learning for different use cases.
 
 Components
@@ -42,7 +42,7 @@ SROM is a toolkit that:
 How to cite
 -----------
 
-In case you are using the *IBM SROM ToolKit* for
+In case you are using the *IBM SROM AI ToolKit* for
 your work and like to cite the `IEEE BigData paper` that describes the toolkit:
 
 .. note::
