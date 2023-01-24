@@ -1,77 +1,37 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <meta property="og:title" content="pipeline.utils package" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="pipeline.utils.html" />
-<meta property="og:site_name" content="SROM" />
+<meta property="og:site_name" content="IBM SROM AI Toolkit" />
 <meta property="og:description" content="Submodules: pipeline.utils.anomaly_utils module: pipeline.utils.functional_pipeline module: pipeline.utils.lithops_helper module: pipeline.utils.pathgen module: Generators for ‘unrolling’ an underl..." />
 <meta name="description" content="Submodules: pipeline.utils.anomaly_utils module: pipeline.utils.functional_pipeline module: pipeline.utils.lithops_helper module: pipeline.utils.pathgen module: Generators for ‘unrolling’ an underl..." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>pipeline.utils package &mdash; SROM 1.7.6 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>pipeline.utils package &mdash; IBM SROM AI Toolkit 1.7.6 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html" class="icon icon-home"> SROM
-          
-
-          
+            <a href="index.html" class="icon icon-home"> IBM SROM AI Toolkit
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,19 +39,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">AI Pipeline:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Core Pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="specialized_pipeline.html">Specialized Pipeline</a></li>
@@ -99,162 +48,47 @@
 <li class="toctree-l1"><a class="reference internal" href="pipeline.execution_types.html">Pipeline Execution</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">SROM</a>
-        
+          <a href="index.html">IBM SROM AI Toolkit</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>pipeline.utils package</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">pipeline.utils package</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="_sources/pipeline.utils.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="pipeline-utils-package">
-<h1>pipeline.utils package<a class="headerlink" href="#pipeline-utils-package" title="Permalink to this heading">¶</a></h1>
+<h1>pipeline.utils package<a class="headerlink" href="#pipeline-utils-package" title="Permalink to this heading"></a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-pipeline.utils.anomaly_utils">
-<span id="pipeline-utils-anomaly-utils-module"></span><h2>pipeline.utils.anomaly_utils module<a class="headerlink" href="#module-pipeline.utils.anomaly_utils" title="Permalink to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.utils.anomaly_utils.create_param_dict">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.anomaly_utils.</span></span><span class="sig-name descname"><span class="pre">create_param_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.anomaly_utils.create_param_dict" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.utils.anomaly_utils.estimator_comparison">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.anomaly_utils.</span></span><span class="sig-name descname"><span class="pre">estimator_comparison</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline_output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.anomaly_utils.estimator_comparison" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>pipeline_output</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>X</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>threshold_method</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>threshold_value</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – [description]. Defaults to 10.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>int</em><em>, </em><em>optional</em>) – [description]. Defaults to 1.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>[description]</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>[type]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.utils.anomaly_utils.get_threshold_statistics">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.anomaly_utils.</span></span><span class="sig-name descname"><span class="pre">get_threshold_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline_output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.anomaly_utils.get_threshold_statistics" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>pipeline_output</strong> (<em>required</em>) – Output from the <cite>pipeline.execute</cite> call containing results.</p></li>
-<li><p><strong>X</strong> (<em>np.array</em><em>, </em><em>required</em>) – Data to be passed</p></li>
-<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of pipelines to execute. Defaults to 1.</p></li>
-<li><p><strong>threshold_parameters</strong> (<em>dict</em><em>, </em><em>optional</em>) – Threshold parameters. Defaults to None.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>int</em><em>, </em><em>optional</em>) – Maximum evaluation time. Defaults to 1.</p></li>
-<li><p><strong>total_execution_time</strong> (<em>int</em><em>, </em><em>optional</em>) – total execution time propagated to SROMPipeline. Defaults to 10.</p></li>
-<li><p><strong>pipeline_index</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of pipeline to be picked from list of <cite>best_estimators</cite>. If number&gt;1,                        this does not have any effect. Defaults to 0.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Threshold statistics results</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>(flat_list, dataframe)</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.utils.anomaly_utils.retrive_base_learner">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.anomaly_utils.</span></span><span class="sig-name descname"><span class="pre">retrive_base_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">statsdf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.anomaly_utils.retrive_base_learner" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>statsdf</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>index</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>[description]</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>[type]</p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="pipeline-utils-anomaly-utils-module">
+<h2>pipeline.utils.anomaly_utils module<a class="headerlink" href="#pipeline-utils-anomaly-utils-module" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-pipeline.utils.functional_pipeline">
-<span id="pipeline-utils-functional-pipeline-module"></span><h2>pipeline.utils.functional_pipeline module<a class="headerlink" href="#module-pipeline.utils.functional_pipeline" title="Permalink to this heading">¶</a></h2>
+<span id="pipeline-utils-functional-pipeline-module"></span><h2>pipeline.utils.functional_pipeline module<a class="headerlink" href="#module-pipeline.utils.functional_pipeline" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="pipeline.utils.functional_pipeline.FunctionPipeline">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.utils.functional_pipeline.</span></span><span class="sig-name descname"><span class="pre">FunctionPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.utils.functional_pipeline.</span></span><span class="sig-name descname"><span class="pre">FunctionPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.utils.functional_pipeline.FunctionPipeline.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.fit" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.fit" title="Permalink to this definition"></a></dt>
 <dd><p>Fit the model.</p>
 <p>Fit all the transformers one after the other and transform the
 data. Finally, fit the transformed data using the final estimator.</p>
@@ -281,7 +115,7 @@ each parameter name is prefixed such that parameter <code class="docutils litera
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.utils.functional_pipeline.FunctionPipeline.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.get_params" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.get_params" title="Permalink to this definition"></a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <p>Returns the parameters given in the constructor as well as the
 estimators contained within the <cite>steps</cite> of the <cite>Pipeline</cite>.</p>
@@ -301,7 +135,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.utils.functional_pipeline.FunctionPipeline.score">
-<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.score" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.score" title="Permalink to this definition"></a></dt>
 <dd><p>Transform the data, and apply <cite>score</cite> with the final estimator.</p>
 <p>Call <cite>transform</cite> of each transformer in the pipeline. The transformed
 data are finally passed to the final estimator that calls
@@ -326,39 +160,34 @@ argument to the <code class="docutils literal notranslate"><span class="pre">sco
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pipeline.utils.functional_pipeline.FunctionPipeline.steps">
-<span class="sig-name descname"><span class="pre">steps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#pipeline.utils.functional_pipeline.FunctionPipeline.steps" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </section>
 <section id="module-pipeline.utils.lithops_helper">
-<span id="pipeline-utils-lithops-helper-module"></span><h2>pipeline.utils.lithops_helper module<a class="headerlink" href="#module-pipeline.utils.lithops_helper" title="Permalink to this heading">¶</a></h2>
+<span id="pipeline-utils-lithops-helper-module"></span><h2>pipeline.utils.lithops_helper module<a class="headerlink" href="#module-pipeline.utils.lithops_helper" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.utils.lithops_helper.replace_lithops_class">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_lithops_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_lithops_class" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_lithops_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_lithops_class" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.utils.lithops_helper.replace_lithops_classes">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_lithops_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimators</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_lithops_classes" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_lithops_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimators</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_lithops_classes" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.utils.lithops_helper.replace_srom_classes">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_srom_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_srom_classes" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.utils.lithops_helper.</span></span><span class="sig-name descname"><span class="pre">replace_srom_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.lithops_helper.replace_srom_classes" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-pipeline.utils.pathgen">
-<span id="pipeline-utils-pathgen-module"></span><h2>pipeline.utils.pathgen module<a class="headerlink" href="#module-pipeline.utils.pathgen" title="Permalink to this heading">¶</a></h2>
+<span id="pipeline-utils-pathgen-module"></span><h2>pipeline.utils.pathgen module<a class="headerlink" href="#module-pipeline.utils.pathgen" title="Permalink to this heading"></a></h2>
 <p>Generators for ‘unrolling’ an underlying DAG of operations.
 This module does not handle distribution or tracking of execution of DAG paths.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.utils.pathgen.with_random_hpgrid">
-<span class="sig-prename descclassname"><span class="pre">pipeline.utils.pathgen.</span></span><span class="sig-name descname"><span class="pre">with_random_hpgrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aparamgrid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsamples</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samplefraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.pathgen.with_random_hpgrid" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.utils.pathgen.</span></span><span class="sig-name descname"><span class="pre">with_random_hpgrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aparamgrid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsamples</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samplefraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.utils.pathgen.with_random_hpgrid" title="Permalink to this definition"></a></dt>
 <dd><dl class="simple">
 <dt>Returns a list of pipelines, each with a parameter grid generated</dt><dd><p>from sampling from given aparamgrid.</p>
 </dd>
@@ -379,52 +208,36 @@ This module does not handle distribution or tracking of execution of DAG paths.<
 
 </section>
 <section id="module-pipeline.utils">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pipeline.utils" title="Permalink to this heading">¶</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pipeline.utils" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright .
-
-    </p>
+    <p>&#169; Copyright 2020, 2021, 2022 IBM Research.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

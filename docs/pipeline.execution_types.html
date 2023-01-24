@@ -1,79 +1,39 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <meta property="og:title" content="Pipeline Execution" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="pipeline.execution_types.html" />
-<meta property="og:site_name" content="SROM" />
+<meta property="og:site_name" content="IBM SROM AI Toolkit" />
 <meta property="og:description" content="Local: Spark: Serverless: Ray: Bayesian: Evolutionary: Hyperband: RBFopt: Dummy: Subpackages: Function Execution- Spark Search Function- cv_learning(), cv_learning_window(), model_execution(), trai..." />
 <meta name="description" content="Local: Spark: Serverless: Ray: Bayesian: Evolutionary: Hyperband: RBFopt: Dummy: Subpackages: Function Execution- Spark Search Function- cv_learning(), cv_learning_window(), model_execution(), trai..." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Pipeline Execution &mdash; SROM 1.7.6 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Pipeline Execution &mdash; IBM SROM AI Toolkit 1.7.6 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Function Execution" href="pipeline.execution_types.exploration.html" />
     <link rel="prev" title="Automation Pipeline" href="auto.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html" class="icon icon-home"> SROM
-          
-
-          
+            <a href="index.html" class="icon icon-home"> IBM SROM AI Toolkit
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,19 +41,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">AI Pipeline:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Core Pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="specialized_pipeline.html">Specialized Pipeline</a></li>
@@ -105,54 +54,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_single_node_search.timebound_fit"><code class="docutils literal notranslate"><span class="pre">timebound_fit()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.srom_spark_search">Spark</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_spark_search.reduce_function"><code class="docutils literal notranslate"><span class="pre">reduce_function()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_spark_search.srom_spark_search"><code class="docutils literal notranslate"><span class="pre">srom_spark_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_spark_search.srom_spark_search_async"><code class="docutils literal notranslate"><span class="pre">srom_spark_search_async()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_spark_search.timebound_model_execution"><code class="docutils literal notranslate"><span class="pre">timebound_model_execution()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.srom_lithops_search">Serverless</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.BatchExecutor"><code class="docutils literal notranslate"><span class="pre">BatchExecutor</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.BatchExecutor.run"><code class="docutils literal notranslate"><span class="pre">BatchExecutor.run()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.boto3client"><code class="docutils literal notranslate"><span class="pre">boto3client()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.create_lithops_pipeline_list"><code class="docutils literal notranslate"><span class="pre">create_lithops_pipeline_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.csv_to_pandasdf"><code class="docutils literal notranslate"><span class="pre">csv_to_pandasdf()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.cv_cf"><code class="docutils literal notranslate"><span class="pre">cv_cf()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.delete_X_y"><code class="docutils literal notranslate"><span class="pre">delete_X_y()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.srom_lithops_search"><code class="docutils literal notranslate"><span class="pre">srom_lithops_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.srom_lithops_search_async"><code class="docutils literal notranslate"><span class="pre">srom_lithops_search_async()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.test_train_cf"><code class="docutils literal notranslate"><span class="pre">test_train_cf()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_lithops_search.upload_X_y"><code class="docutils literal notranslate"><span class="pre">upload_X_y()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.srom_ray_search">Ray</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_ray_search.srom_ray_search"><code class="docutils literal notranslate"><span class="pre">srom_ray_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_ray_search.srom_ray_search_async"><code class="docutils literal notranslate"><span class="pre">srom_ray_search_async()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.bayesian_model_selection">Bayesian</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.bayesian_model_selection.bayesian_search"><code class="docutils literal notranslate"><span class="pre">bayesian_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.bayesian_model_selection.bayesian_search_async"><code class="docutils literal notranslate"><span class="pre">bayesian_search_async()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.evolutionary_model_selection">Evolutionary</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.evolutionary_model_selection.evolutionary_search"><code class="docutils literal notranslate"><span class="pre">evolutionary_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.evolutionary_model_selection.evolutionary_search_async"><code class="docutils literal notranslate"><span class="pre">evolutionary_search_async()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#spark">Spark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#serverless">Serverless</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ray">Ray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bayesian">Bayesian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#evolutionary">Evolutionary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.hyperband_model_selection">Hyperband</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search"><code class="docutils literal notranslate"><span class="pre">hyperband_search()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search_async"><code class="docutils literal notranslate"><span class="pre">hyperband_search_async()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.rbfopt_model_selection">RBFopt</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.rbfopt_model_selection.rbfopt_search"><code class="docutils literal notranslate"><span class="pre">rbfopt_search()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.rbfopt_model_selection.rbfopt_search_async"><code class="docutils literal notranslate"><span class="pre">rbfopt_search_async()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#rbfopt">RBFopt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-pipeline.execution_types.srom_dummy_search">Dummy</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_dummy_search.cv_learning"><code class="docutils literal notranslate"><span class="pre">cv_learning()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.execution_types.srom_dummy_search.srom_dummy_search"><code class="docutils literal notranslate"><span class="pre">srom_dummy_search()</span></code></a></li>
@@ -167,78 +79,37 @@
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">SROM</a>
-        
+          <a href="index.html">IBM SROM AI Toolkit</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Pipeline Execution</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Pipeline Execution</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="_sources/pipeline.execution_types.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="pipeline-execution">
-<h1>Pipeline Execution<a class="headerlink" href="#pipeline-execution" title="Permalink to this heading">¶</a></h1>
+<h1>Pipeline Execution<a class="headerlink" href="#pipeline-execution" title="Permalink to this heading"></a></h1>
 <section id="module-pipeline.execution_types.srom_single_node_search">
-<span id="local"></span><h2>Local<a class="headerlink" href="#module-pipeline.execution_types.srom_single_node_search" title="Permalink to this heading">¶</a></h2>
+<span id="local"></span><h2>Local<a class="headerlink" href="#module-pipeline.execution_types.srom_single_node_search" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-srom_single_node_search"></span><dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_single_node_search.srom_single_node_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.srom_single_node_search" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.srom_single_node_search" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -282,382 +153,35 @@ best_scores_std: (list)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_single_node_search.srom_single_node_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.srom_single_node_search_async" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">srom_single_node_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_out</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.srom_single_node_search_async" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_single_node_search.timebound_fit">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">timebound_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallel_backend_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_n_jobs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.timebound_fit" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_single_node_search.</span></span><span class="sig-name descname"><span class="pre">timebound_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallel_backend_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_n_jobs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_single_node_search.timebound_fit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
-<section id="module-pipeline.execution_types.srom_spark_search">
-<span id="spark"></span><h2>Spark<a class="headerlink" href="#module-pipeline.execution_types.srom_spark_search" title="Permalink to this heading">¶</a></h2>
-<span class="target" id="module-srom_spark_search"></span><dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_spark_search.reduce_function">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_spark_search.</span></span><span class="sig-name descname"><span class="pre">reduce_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_spark_search.reduce_function" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_spark_search.srom_spark_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_spark_search.</span></span><span class="sig-name descname"><span class="pre">srom_spark_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc:</span> <span class="pre">~pyspark.context.SparkContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_spark_search.srom_spark_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output].</p></li>
-<li><p><strong>sc</strong> – spark context.</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists of parameter             settings to try as values, or a list of such dictionaries, in which case the grids spanned             by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of paths in scikit pipeline.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to             evaluate the predictions on the test set.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>integer</em><em>) </em><em>(</em><em>minutes</em>) – Maximum timeout for execution of pipelines with             unique parameter grid combination.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10.Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’</p></li>
-<li><p><strong>mode</strong> (<em>String</em>) – Default: “exhaustive”.Possible values: “random” or “exhaustive”.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If mode not in [‘exhaustive’, ‘random’].
-    2. If paths is none or empty.
-    3. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>Exception</strong> – Raises a generic exception.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_spark_search.srom_spark_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_spark_search.</span></span><span class="sig-name descname"><span class="pre">srom_spark_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc:</span> <span class="pre">~pyspark.context.SparkContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_spark_search.srom_spark_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_spark_search.timebound_model_execution">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_spark_search.</span></span><span class="sig-name descname"><span class="pre">timebound_model_execution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipelines_bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_spark_search.timebound_model_execution" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs time bound execution of pipeline.     If cv_learning task is not completed in max_eval_time_minute_bc minutes     then that task is terminated.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>tup</strong> (<em>tuple</em>) – (parameters, pipeline_index)
-parameters(list, dict): Pipeline grid combination parameters.
-pipeline_index (integer):Index for the pipeline for which cross                 validation is to be executed.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>pipeline_index (integer): Index for the pipeline for which cross                 validation is to be executed.
-parameters (list, dict): Pipeline grid combination parameters.
-score (integer): Mean test score or nan if execution time exceeds                 max_eval_time_minute_bc for processing.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple (pipeline_index, (parameters, score))</p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="spark">
+<h2>Spark<a class="headerlink" href="#spark" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-pipeline.execution_types.srom_lithops_search">
-<span id="serverless"></span><h2>Serverless<a class="headerlink" href="#module-pipeline.execution_types.srom_lithops_search" title="Permalink to this heading">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.BatchExecutor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">BatchExecutor</span></span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.BatchExecutor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Helper class to run the cloud function
-in Batch</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.BatchExecutor.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">map_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipelines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activations</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.BatchExecutor.run" title="Permalink to this definition">¶</a></dt>
-<dd><p>map_func : to run
-pipelines : list of pipelines to execute
-activations : integer</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.boto3client">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">boto3client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resiliency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cross-region'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'us'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'us-geo'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.boto3client" title="Permalink to this definition">¶</a></dt>
-<dd><p>returns an ibm boto3 client</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.create_lithops_pipeline_list">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">create_lithops_pipeline_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipelines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimize_utilization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_is_none_flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.create_lithops_pipeline_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>pipelines:
-param_grids:
-mode:
-num_option_per_pipeline:
-path_ids:
-rounds:
-scorer:
-random_state:
-optimize_utilization:</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.csv_to_pandasdf">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">csv_to_pandasdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resiliency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cross-region'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'us'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'us-geo'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.csv_to_pandasdf" title="Permalink to this definition">¶</a></dt>
-<dd><p>Method to fetch data from cos and convert it to dataframe.
-:returns: Pandas dataframe</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.cv_cf">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">cv_cf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline_param_grid_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.cv_cf" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs cross validation.
-:param tup: Tuple containing parameters and pipeline_index.
-:type tup: tuple</p>
-<dl class="simple">
-<dt>output:</dt><dd><p>Shared resource for multiprocessing.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.delete_X_y">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">delete_X_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_is_none_flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.delete_X_y" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X_name</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>y_name</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>bucket_name</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.srom_lithops_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">srom_lithops_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upload_data=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_data=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.srom_lithops_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output]</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists of parameter             settings to try as values, or a list of such dictionaries, in which case the grids             spanned by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of estimator paths.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to evaluate             the predictions on the test set.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>integer</em><em>) </em><em>(</em><em>minutes</em>) – Maximum timeout for execution of pipelines with unique             parameter grid combination.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10. Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’.</p></li>
-<li><p><strong>mode</strong> (<em>String</em>) – Default: “exhaustive”. Possible values: “random” or “exhaustive”</p></li>
-<li><p><strong>groups</strong> – </p></li>
-<li><p><strong>cross_val_score</strong> – </p></li>
-<li><p><strong>evn_config</strong> – </p></li>
-<li><p><strong>upload_data</strong> – </p></li>
-<li><p><strong>random_state</strong> – </p></li>
-<li><p><strong>lithops_mode</strong> – </p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If mode not in [‘exhaustive’, ‘random’].
-    2. If paths is none or empty.
-    3. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>Exception</strong> – Raises a generic exception.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.srom_lithops_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">srom_lithops_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upload_data=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lithops_mode='serverless'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.srom_lithops_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.test_train_cf">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">test_train_cf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline_param_grid_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.test_train_cf" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs cross validation.
-:param tup: Tuple containing parameters and pipeline_index.
-:type tup: tuple</p>
-<dl class="simple">
-<dt>output:</dt><dd><p>Shared resource for multiprocessing.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_lithops_search.upload_X_y">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_lithops_search.</span></span><span class="sig-name descname"><span class="pre">upload_X_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bucket_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_lithops_search.upload_X_y" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="serverless">
+<h2>Serverless<a class="headerlink" href="#serverless" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-pipeline.execution_types.srom_ray_search">
-<span id="ray"></span><h2>Ray<a class="headerlink" href="#module-pipeline.execution_types.srom_ray_search" title="Permalink to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_ray_search.srom_ray_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_ray_search.</span></span><span class="sig-name descname"><span class="pre">srom_ray_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_ray_search.srom_ray_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output].</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists of parameter             settings to try as values, or a list of such dictionaries, in which case the grids spanned             by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of paths in scikit pipeline.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to             evaluate the predictions on the test set.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>integer</em><em>) </em><em>(</em><em>minutes</em>) – Maximum timeout for execution of pipelines with             unique parameter grid combination.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10.Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’</p></li>
-<li><p><strong>mode</strong> (<em>String</em>) – Default: “exhaustive”.Possible values: “random” or “exhaustive”.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If mode not in [‘exhaustive’, ‘random’].
-    2. If paths is none or empty.
-    3. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>Exception</strong> – Raises a generic exception.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.srom_ray_search.srom_ray_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_ray_search.</span></span><span class="sig-name descname"><span class="pre">srom_ray_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_ray_search.srom_ray_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="ray">
+<h2>Ray<a class="headerlink" href="#ray" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-pipeline.execution_types.bayesian_model_selection">
-<span id="bayesian"></span><h2>Bayesian<a class="headerlink" href="#module-pipeline.execution_types.bayesian_model_selection" title="Permalink to this heading">¶</a></h2>
-<span class="target" id="module-bayesian_model_selection"></span><dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.bayesian_model_selection.bayesian_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.bayesian_model_selection.</span></span><span class="sig-name descname"><span class="pre">bayesian_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_estimator_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'GP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.bayesian_model_selection.bayesian_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output]</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists             of parameter settings to try as values, or a list of such dictionaries, in             which case the grids spanned by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of estimator paths.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to             evaluate the predictions on the test set.</p></li>
-<li><p><strong>n_jobs</strong> (<em>integer</em>) – Number of parallel jobs.</p></li>
-<li><p><strong>pre_dispatch</strong> (<em>integer</em><em>, or </em><em>string</em>) – Controls the number of jobs that get dispatched             during parallel execution. Reducing this number can be useful to avoid an explosion             of memory consumption when more jobs get dispatched than CPUs can process.</p></li>
-<li><p><strong>max_eval_time_minute</strong> (<em>integer</em><em>) </em><em>(</em><em>minutes</em>) – Maximum timeout for execution of pipelines             with unique parameter grid combination.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10. Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’</p></li>
-<li><p><strong>base_estimator_name</strong> (<em>string</em>) – “GP”, “RF”, “ET”, “GBRT” or sklearn regressor, default=”GP”.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)
-best_scores_std: (list)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If base_estimator_name not in [‘RF’, ‘GP’, ‘ET’, ‘GBRT’].
-    2. If paths is none or empty.
-    3. If n_jobs is none or is not instance of integer.
-    4. If pre_dispatch is none or is not instance of integer or string.
-    5. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>MemoryError</strong> – If operation is out of memory.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.bayesian_model_selection.bayesian_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.bayesian_model_selection.</span></span><span class="sig-name descname"><span class="pre">bayesian_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_estimator_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'GP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.bayesian_model_selection.bayesian_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="bayesian">
+<h2>Bayesian<a class="headerlink" href="#bayesian" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-pipeline.execution_types.evolutionary_model_selection">
-<span id="evolutionary"></span><h2>Evolutionary<a class="headerlink" href="#module-pipeline.execution_types.evolutionary_model_selection" title="Permalink to this heading">¶</a></h2>
-<span class="target" id="module-evolutionary_model_selection"></span><dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.evolutionary_model_selection.evolutionary_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.evolutionary_model_selection.</span></span><span class="sig-name descname"><span class="pre">evolutionary_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.evolutionary_model_selection.evolutionary_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output].</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists of             parameter settings to try as values, or a list of such dictionaries, in which             case the grids spanned by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of estimator paths.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to             evaluate the predictions on the test set.</p></li>
-<li><p><strong>n_jobs</strong> (<em>integer</em>) – Number of parallel jobs.</p></li>
-<li><p><strong>pre_dispatch</strong> (<em>integer</em><em>, or </em><em>string</em>) – Controls the number of jobs that get dispatched during             parallel execution. Reducing this number can be useful to avoid an explosion of memory             consumption when more jobs get dispatched than CPUs can process.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10. Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)
-best_scores_std : (list)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If paths is none or empty.
-    2. If n_jobs is none or is not instance of integer.
-    3. If pre_dispatch is none or is not instance of integer or string.
-    4. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>MemoryError</strong> – If operation is out of memory.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.evolutionary_model_selection.evolutionary_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.evolutionary_model_selection.</span></span><span class="sig-name descname"><span class="pre">evolutionary_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.evolutionary_model_selection.evolutionary_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="evolutionary">
+<h2>Evolutionary<a class="headerlink" href="#evolutionary" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-pipeline.execution_types.hyperband_model_selection">
-<span id="hyperband"></span><h2>Hyperband<a class="headerlink" href="#module-pipeline.execution_types.hyperband_model_selection" title="Permalink to this heading">¶</a></h2>
+<span id="hyperband"></span><h2>Hyperband<a class="headerlink" href="#module-pipeline.execution_types.hyperband_model_selection" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-hyperband_model_selection"></span><dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.hyperband_model_selection.hyperband_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.hyperband_model_selection.</span></span><span class="sig-name descname"><span class="pre">hyperband_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.hyperband_model_selection.</span></span><span class="sig-name descname"><span class="pre">hyperband_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -698,64 +222,18 @@ best_scores_std: (list)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.hyperband_model_selection.hyperband_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.hyperband_model_selection.</span></span><span class="sig-name descname"><span class="pre">hyperband_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search_async" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.hyperband_model_selection.</span></span><span class="sig-name descname"><span class="pre">hyperband_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.hyperband_model_selection.hyperband_search_async" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
-<section id="module-pipeline.execution_types.rbfopt_model_selection">
-<span id="rbfopt"></span><h2>RBFopt<a class="headerlink" href="#module-pipeline.execution_types.rbfopt_model_selection" title="Permalink to this heading">¶</a></h2>
-<span class="target" id="module-rbfopt_model_selection"></span><dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.rbfopt_model_selection.rbfopt_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.rbfopt_model_selection.</span></span><span class="sig-name descname"><span class="pre">rbfopt_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.rbfopt_model_selection.rbfopt_search" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – The dataset to be used for model selection.             shape = [n_samples, n_features]             where n_samples is the number of samples and n_features is the number of features.</p></li>
-<li><p><strong>y</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Target vector to be used. This is optional,             if target_column is added in the meta data, it is used from there.             shape = [n_samples] or [n_samples, n_output].</p></li>
-<li><p><strong>param_grid</strong> (<em>dict</em>) – Dictionary with parameter names(string) as keys and lists of             parameter settings to try as values, or a list of such dictionaries, in which             case the grids spanned by each dictionary in the list are explored.</p></li>
-<li><p><strong>paths</strong> (<em>list</em>) – Consists of estimator paths.</p></li>
-<li><p><strong>cv</strong> (<em>integer</em><em>, </em><em>cross-validation generator</em><em> or </em><em>an iterable</em>) – Determines the cross-validation             splitting strategy.</p></li>
-<li><p><strong>scorer</strong> (<em>string</em><em>, </em><em>callable</em><em>, </em><em>list/tuple</em><em>, </em><em>dict</em><em> or </em><em>None</em>) – A single string or a callable to             evaluate the predictions on the test set.</p></li>
-<li><p><strong>n_jobs</strong> (<em>integer</em>) – Number of parallel jobs.</p></li>
-<li><p><strong>pre_dispatch</strong> (<em>integer</em><em>, or </em><em>string</em>) – Controls the number of jobs that get dispatched during             parallel execution. Reducing this number can be useful to avoid an explosion of memory             consumption when more jobs get dispatched than CPUs can process.</p></li>
-<li><p><strong>num_option_per_pipeline</strong> (<em>integer</em>) – Default: 10. Number of parameter settings that are sampled.             This parameter is applicable if mode is ‘random’.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns: (tuple)</dt><dd><p>best_estimators: (list)
-best_scores: (list)
-number_of_combinations: (integer)
-best_scores_std: (list)</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>IncorrectValueException</strong> – <ol class="arabic simple">
-<li><p>If paths is none or empty.
-    2. If n_jobs is none or is not instance of integer.
-    3. If pre_dispatch is none or is not instance of integer or string.
-    4. If num_option_per_pipeline is none or is not instance of integer                or num_option_per_pipeline is less than 1.</p></li>
-</ol>
-</p></li>
-<li><p><strong>MemoryError</strong> – If operation is out of memory.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pipeline.execution_types.rbfopt_model_selection.rbfopt_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.rbfopt_model_selection.</span></span><span class="sig-name descname"><span class="pre">rbfopt_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.rbfopt_model_selection.rbfopt_search_async" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="rbfopt">
+<h2>RBFopt<a class="headerlink" href="#rbfopt" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-pipeline.execution_types.srom_dummy_search">
-<span id="dummy"></span><h2>Dummy<a class="headerlink" href="#module-pipeline.execution_types.srom_dummy_search" title="Permalink to this heading">¶</a></h2>
+<span id="dummy"></span><h2>Dummy<a class="headerlink" href="#module-pipeline.execution_types.srom_dummy_search" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_dummy_search.cv_learning">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">cv_learning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipelines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.cv_learning" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">cv_learning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipelines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.cv_learning" title="Permalink to this definition"></a></dt>
 <dd><p>Performs cross validation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -770,7 +248,7 @@ best_scores_std: (list)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_dummy_search.srom_dummy_search">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">srom_dummy_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.srom_dummy_search" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">srom_dummy_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.srom_dummy_search" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -809,12 +287,12 @@ number_of_combinations: (integer)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.execution_types.srom_dummy_search.srom_dummy_search_async">
-<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">srom_dummy_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.srom_dummy_search_async" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.execution_types.srom_dummy_search.</span></span><span class="sig-name descname"><span class="pre">srom_dummy_search_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scorer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode='exhaustive'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cross_val_score=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_type=&lt;class</span> <span class="pre">'sklearn.pipeline.Pipeline'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipeline_init_param={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evn_config=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity='low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_queue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.execution_types.srom_dummy_search.srom_dummy_search_async" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pipeline.execution_types.exploration.html">Function Execution</a><ul>
@@ -846,50 +324,33 @@ number_of_combinations: (integer)</p>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pipeline.execution_types.exploration.html" class="btn btn-neutral float-right" title="Function Execution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="auto.html" class="btn btn-neutral float-left" title="Automation Pipeline" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pipeline.execution_types.exploration.html" class="btn btn-neutral float-right" title="Function Execution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright .
-
-    </p>
+    <p>&#169; Copyright 2020, 2021, 2022 IBM Research.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

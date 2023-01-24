@@ -3,17 +3,56 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to srom's documentation!
-================================
+Welcome to IBM SROM AI Toolkit's documentation!
+===============================================
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   :caption: AI Pipeline:
+   :hidden:
 
    pipeline
    specialized_pipeline
    auto
    pipeline.execution_types
+
+
+*IBM SROM (Smarter Resource Operation Management) ToolKit* is an Python toolkit for
+exploring and using the capabilities of novel machine learning algorithms and pipelines. SROM provide a collection of solutions for intelligent machine learning for different use cases.
+
+Components
+----------
+
+SROM is a toolkit that:
+
+* Provides a consistent programming model for building AI/ML solutions.
+* Provides a scalable execution approach to:
+   * model training
+   * hyperparameter tuning (HPT)
+   * deployment of on and off-premises solutions.
+* Extends open source platforms and algorithms to provide industry-specific templates and tooling for frequently occurring use cases
+   * Anomaly Detection
+   * Cognitive Plant Advisor
+   * Failure Prediction
+   * Root Cause Analysis
+   * Survival Analysis
+   * Time Series Prediction
+
+
+How to cite
+-----------
+
+In case you are using the *IBM SROM ToolKit* for
+your work and like to cite the `IEEE BigData paper` that describes the toolkit:
+
+.. note::
+
+    D. Patel, S. Shrivastava, W. Gifford, S. Siegel, J. Kalagnanam and C. Reddy, 
+    "Smart-ML A System for Machine Learning Model Exploration using Pipeline Graph," 
+    2020 IEEE International Conference on Big Data (Big Data), Atlanta, GA, USA, 2020, 
+    pp. 1604-1613, doi: 10.1109/BigData50022.2020.9378082.
+
+    https://ieeexplore.ieee.org/abstract/document/9378082
 
 Indices and tables
 ==================

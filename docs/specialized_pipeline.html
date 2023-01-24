@@ -1,79 +1,39 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <meta property="og:title" content="Specialized Pipeline" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="specialized_pipeline.html" />
-<meta property="og:site_name" content="SROM" />
+<meta property="og:site_name" content="IBM SROM AI Toolkit" />
 <meta property="og:description" content="Anomaly Detection: Failure Pattern Analysis: Time Series Anomaly: Time Series Classification: Time Series Prediction: Transformed Target:" />
 <meta name="description" content="Anomaly Detection: Failure Pattern Analysis: Time Series Anomaly: Time Series Classification: Time Series Prediction: Transformed Target:" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Specialized Pipeline &mdash; SROM 1.7.6 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Specialized Pipeline &mdash; IBM SROM AI Toolkit 1.7.6 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Automation Pipeline" href="auto.html" />
     <link rel="prev" title="Core Pipeline" href="pipeline.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html" class="icon icon-home"> SROM
-          
-
-          
+            <a href="index.html" class="icon icon-home"> IBM SROM AI Toolkit
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,19 +41,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">AI Pipeline:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Core Pipeline</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Specialized Pipeline</a><ul>
@@ -152,7 +101,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#pipeline.transformed_target_pipeline.TransformedTarget"><code class="docutils literal notranslate"><span class="pre">TransformedTarget</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#pipeline.transformed_target_pipeline.TransformedTarget.fit"><code class="docutils literal notranslate"><span class="pre">TransformedTarget.fit()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pipeline.transformed_target_pipeline.TransformedTarget.predict"><code class="docutils literal notranslate"><span class="pre">TransformedTarget.predict()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pipeline.transformed_target_pipeline.TransformedTarget.steps"><code class="docutils literal notranslate"><span class="pre">TransformedTarget.steps</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -163,78 +111,37 @@
 <li class="toctree-l1"><a class="reference internal" href="pipeline.execution_types.html">Pipeline Execution</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">SROM</a>
-        
+          <a href="index.html">IBM SROM AI Toolkit</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Specialized Pipeline</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Specialized Pipeline</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="_sources/specialized_pipeline.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="specialized-pipeline">
-<h1>Specialized Pipeline<a class="headerlink" href="#specialized-pipeline" title="Permalink to this heading">¶</a></h1>
+<h1>Specialized Pipeline<a class="headerlink" href="#specialized-pipeline" title="Permalink to this heading"></a></h1>
 <section id="module-pipeline.anomaly_pipeline">
-<span id="anomaly-detection"></span><h2>Anomaly Detection<a class="headerlink" href="#module-pipeline.anomaly_pipeline" title="Permalink to this heading">¶</a></h2>
+<span id="anomaly-detection"></span><h2>Anomaly Detection<a class="headerlink" href="#module-pipeline.anomaly_pipeline" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-anomaly_pipeline"></span><dl class="py class">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.anomaly_pipeline.</span></span><span class="sig-name descname"><span class="pre">AnomalyPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">anomaly_threshold_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contamination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qfunction_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">medianabsolutedev_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adaptivecontamination_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.anomaly_pipeline.</span></span><span class="sig-name descname"><span class="pre">AnomalyPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">anomaly_threshold_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contamination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qfunction_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">medianabsolutedev_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adaptivecontamination_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SROMPipeline</span></code></p>
 <p>AnomalyPipeline Class.
 contamination : float in (0., 0.5), optional (default=-1)
@@ -248,7 +155,7 @@ qfunction_threshold : float : used when anomaly_threshold_method = qfunction
 medianabsolutedev_threshold : float : used when anomaly_threshold_method = medianabsolutedev</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.execute">
-<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trainX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exectype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'single_node_complete_search'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.execute" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trainX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exectype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'single_node_complete_search'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'low'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_eval_time_minute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_option_per_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_execution_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.execute" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -288,7 +195,7 @@ of pipelines with unique parameter grid combination. This parameter is applicabl
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.generate_base_anomaly_score_statistics">
-<span class="sig-name descname"><span class="pre">generate_base_anomaly_score_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trainX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.generate_base_anomaly_score_statistics" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">generate_base_anomaly_score_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trainX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.generate_base_anomaly_score_statistics" title="Permalink to this definition"></a></dt>
 <dd><p>Generate mean and standard deviation of anomaly score.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -306,7 +213,7 @@ standard deviation of anomaly score.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.get_best_thresholds">
-<span class="sig-name descname"><span class="pre">get_best_thresholds</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.get_best_thresholds" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_best_thresholds</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.get_best_thresholds" title="Permalink to this definition"></a></dt>
 <dd><p>get_best_thresholds returns best thresholds of anomaly pipeline.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -317,7 +224,7 @@ standard deviation of anomaly score.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.predict">
-<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.predict" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.predict" title="Permalink to this definition"></a></dt>
 <dd><p>Predict the class labels. 0 = normal, 1 = anomaly.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -342,7 +249,7 @@ used for prediction.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.predict_proba">
-<span class="sig-name descname"><span class="pre">predict_proba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.predict_proba" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">predict_proba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.predict_proba" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>X</strong> (<em>pandas dataframe</em><em> or </em><em>numpy array</em>) – Test samples.</p>
@@ -358,7 +265,7 @@ used for prediction.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.score">
-<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.score" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.score" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -374,7 +281,7 @@ used for prediction.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.set_best_thresholds">
-<span class="sig-name descname"><span class="pre">set_best_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">best_thresholds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.set_best_thresholds" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_best_thresholds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">best_thresholds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.set_best_thresholds" title="Permalink to this definition"></a></dt>
 <dd><p>set_best_thresholds function is used to set the value for best thresholds.
 best_thresholds can be None or ndarray of int/float.</p>
 <dl class="field-list simple">
@@ -390,7 +297,7 @@ best_thresholds can be None or ndarray of int/float.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.AnomalyPipeline.set_scoring">
-<span class="sig-name descname"><span class="pre">set_scoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_metric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'anomaly_f1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_topk_param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.set_scoring" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_scoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_metric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'anomaly_f1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring_topk_param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.AnomalyPipeline.set_scoring" title="Permalink to this definition"></a></dt>
 <dd><p>set_scoring is used to set the scoring to evaluate the model.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -412,17 +319,17 @@ scoring_method is ‘top-k’.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pipeline.anomaly_pipeline.custom_loss_func">
-<span class="sig-prename descclassname"><span class="pre">pipeline.anomaly_pipeline.</span></span><span class="sig-name descname"><span class="pre">custom_loss_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ground_truth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predictions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.custom_loss_func" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pipeline.anomaly_pipeline.</span></span><span class="sig-name descname"><span class="pre">custom_loss_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ground_truth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predictions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.anomaly_pipeline.custom_loss_func" title="Permalink to this definition"></a></dt>
 <dd><p>Create new evaluator.
 Creates a scorer from anomaly evaluator object.</p>
 </dd></dl>
 
 </section>
 <section id="module-pipeline.failure_pattern_analysis">
-<span id="failure-pattern-analysis"></span><h2>Failure Pattern Analysis<a class="headerlink" href="#module-pipeline.failure_pattern_analysis" title="Permalink to this heading">¶</a></h2>
+<span id="failure-pattern-analysis"></span><h2>Failure Pattern Analysis<a class="headerlink" href="#module-pipeline.failure_pattern_analysis" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-failure_pattern_analysis"></span><dl class="py class">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.failure_pattern_analysis.</span></span><span class="sig-name descname"><span class="pre">FailurePatternAnalysisPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asset_id_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_type_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_datetime_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_datetime_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_detection_window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_datetime_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_datetime_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_interval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.failure_pattern_analysis.</span></span><span class="sig-name descname"><span class="pre">FailurePatternAnalysisPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asset_id_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_type_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_datetime_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_datetime_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_detection_window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_datetime_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failure_datetime_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_interval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SROMPipeline</span></code></p>
 <p>Failure Prediction Analysis (FPA) is a solution template which allows user to     build machine learning models for predicting imminent failures by analyzing the     time-series data generated in heavy industries.     Advantages of this pipeline are: 1. Feature engineering and extraction is done     within the pipeline which reduces lot of code from notebook/workflow and reduces     human errors. 2. It can be used as a re-train pipeline in automated processes which     is not possible with de-coupled feature extraction and estimator selection.     3. It accepts sensor and failure tables as is which reduces steps to prepare merged     FPATable. 4. Multiple feature generators and pipelines or list of sklearn pipelines or     SROM pipelines including smart clasification can be used as stages.</p>
 <dl class="field-list simple">
@@ -463,7 +370,7 @@ Creates a scorer from anomaly evaluator object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.create_graph">
-<span class="sig-name descname"><span class="pre">create_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.create_graph" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">create_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.create_graph" title="Permalink to this definition"></a></dt>
 <dd><p>From the stages set in the pipeline, create a graph object using networkx.         The graph is saved as dot file, pickle and image at the pipeline’s storage location.         Graph File is generated only if number of node is &lt; 40.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -480,7 +387,7 @@ Creates a scorer from anomaly evaluator object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.execute">
-<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensorDb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failureDb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.execute" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensorDb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failureDb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.execute" title="Permalink to this definition"></a></dt>
 <dd><p>This function merges the sensor and failure data using provided configuration         during initialization of fpa pipeline. Then, runs cross validation on a given         dataset along all possible paths in the DAG and returns the result of the best estimator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -507,7 +414,7 @@ best_score (numpy.float64): Train score of selected best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.fit" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.fit" title="Permalink to this definition"></a></dt>
 <dd><p>Fit the best estimator resulted from execute function, with the         sensor and failure data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -521,7 +428,7 @@ best_score (numpy.float64): Train score of selected best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.get_feature_engineered_table">
-<span class="sig-name descname"><span class="pre">get_feature_engineered_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.get_feature_engineered_table" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_engineered_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.get_feature_engineered_table" title="Permalink to this definition"></a></dt>
 <dd><p>This function applies feature generator from best estimator pipeline         and returns the feature extracted data and mapped target labels.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -543,7 +450,7 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict">
-<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict" title="Permalink to this definition"></a></dt>
 <dd><p>Predict the class labels/failures using the trained best pipeline.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -557,7 +464,7 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict_proba">
-<span class="sig-name descname"><span class="pre">predict_proba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict_proba" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">predict_proba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.predict_proba" title="Permalink to this definition"></a></dt>
 <dd><p>Predict the failure probability using the best estimator of the pipeline.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -571,7 +478,7 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_cross_validation">
-<span class="sig-name descname"><span class="pre">set_cross_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cv_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'asset'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv_fold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_cross_validation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_cross_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cv_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'asset'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv_fold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_cross_validation" title="Permalink to this definition"></a></dt>
 <dd><p>Selection of cross validator based on asset/group or iid (non-group).         For more information on asset/group cv, refer user guide         <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html</a>.         For more information on cv_fold, please refer user guide         <a class="reference external" href="https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation">https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation</a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -585,7 +492,7 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_stages">
-<span class="sig-name descname"><span class="pre">set_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_generators</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_builders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_stages" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_generators</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_builders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.failure_pattern_analysis.FailurePatternAnalysisPipeline.set_stages" title="Permalink to this definition"></a></dt>
 <dd><p>Sets feature generators and model builders as stages. Each of the feature generators         and model builders will be used a stage in pipeline exploration.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -603,16 +510,16 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 </section>
 <section id="module-pipeline.time_series_anomaly">
-<span id="time-series-anomaly"></span><h2>Time Series Anomaly<a class="headerlink" href="#module-pipeline.time_series_anomaly" title="Permalink to this heading">¶</a></h2>
+<span id="time-series-anomaly"></span><h2>Time Series Anomaly<a class="headerlink" href="#module-pipeline.time_series_anomaly" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-time_series_prediction"></span><dl class="py class">
 <dt class="sig sig-object py" id="pipeline.time_series_anomaly.TimeSeriesAnomaly">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_anomaly.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesAnomaly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store_lookback_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_anomaly.TimeSeriesAnomaly" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_anomaly.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesAnomaly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store_lookback_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_anomaly.TimeSeriesAnomaly" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesPredictionPipeline</span></code></p>
 <p>An abstraction built to be used by time series prediction pipeline     and prediction based anomaly detection pipelines (for now). It should     be used for other such time series pipeline built in the future.</p>
 <p>The BaseTS pipeline is being built to abstract methods and variables which are involved     in pipeline path parsing, data transformation and providing the Cross-Validator with the     right data to fit the best estimator.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.time_series_anomaly.TimeSeriesAnomaly.add_stages">
-<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_anomaly.TimeSeriesAnomaly.add_stages" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_anomaly.TimeSeriesAnomaly.add_stages" title="Permalink to this definition"></a></dt>
 <dd><p>Adds a set of graph nodes in a list of list format.         Appends to the existing graph by adding another set         of nodes from start to end.</p>
 </dd></dl>
 
@@ -620,16 +527,16 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 </section>
 <section id="module-pipeline.time_series_classifier">
-<span id="time-series-classification"></span><h2>Time Series Classification<a class="headerlink" href="#module-pipeline.time_series_classifier" title="Permalink to this heading">¶</a></h2>
+<span id="time-series-classification"></span><h2>Time Series Classification<a class="headerlink" href="#module-pipeline.time_series_classifier" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-time_series_classification"></span><dl class="py class">
 <dt class="sig sig-object py" id="pipeline.time_series_classifier.TimeSeriesClassificationPipeline">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_classifier.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesClassificationPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_observation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_classifier.TimeSeriesClassificationPipeline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_classifier.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesClassificationPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_observation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_classifier.TimeSeriesClassificationPipeline" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SROMPipeline</span></code></p>
 <p>An abstraction built to be used by time series classification pipeline.</p>
 <p>The BaseTS pipeline is being built to abstract methods and variables which are involved     in pipeline path parsing, data transformation and providing the Cross-Validator with the     right data to fit the best estimator.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.time_series_classifier.TimeSeriesClassificationPipeline.add_stages">
-<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_classifier.TimeSeriesClassificationPipeline.add_stages" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_classifier.TimeSeriesClassificationPipeline.add_stages" title="Permalink to this definition"></a></dt>
 <dd><p>Adds a set of graph nodes in a list of list format.         Appends to the existing graph by adding another set         of nodes from start to end.</p>
 </dd></dl>
 
@@ -637,16 +544,16 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 </section>
 <section id="module-pipeline.time_series_prediction">
-<span id="time-series-prediction"></span><h2>Time Series Prediction<a class="headerlink" href="#module-pipeline.time_series_prediction" title="Permalink to this heading">¶</a></h2>
+<span id="time-series-prediction"></span><h2>Time Series Prediction<a class="headerlink" href="#module-pipeline.time_series_prediction" title="Permalink to this heading"></a></h2>
 <span class="target" id="module-0"></span><dl class="py class">
 <dt class="sig sig-object py" id="pipeline.time_series_prediction.TimeSeriesPredictionPipeline">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_prediction.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesPredictionPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store_lookback_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.time_series_prediction.</span></span><span class="sig-name descname"><span class="pre">TimeSeriesPredictionPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lookback_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store_lookback_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SROMPipeline</span></code></p>
 <p>An abstraction built to be used by time series prediction pipeline     and prediction based anomaly detection pipelines (for now). It should     be used for other such time series pipeline built in the future.</p>
 <p>The BaseTS pipeline is being built to abstract methods and variables which are involved     in pipeline path parsing, data transformation and providing the Cross-Validator with the     right data to fit the best estimator.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_input_meta_data">
-<span class="sig-name descname"><span class="pre">add_input_meta_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_input_meta_data" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_input_meta_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_input_meta_data" title="Permalink to this definition"></a></dt>
 <dd><p>Sets the input meta data that can be used in other functions appropriately.         For most SROM pipelines, time, index and label apply, hence setting these in         the base pipeline class. Subclasses can add more meta data as required.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -662,7 +569,7 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_stages">
-<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_stages" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_stages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.time_series_prediction.TimeSeriesPredictionPipeline.add_stages" title="Permalink to this definition"></a></dt>
 <dd><p>Adds a set of graph nodes in a list of list format.         Appends to the existing graph by adding another set         of nodes from start to end.</p>
 </dd></dl>
 
@@ -670,10 +577,10 @@ targets (numpy.float64): Train score of best estimator.</p>
 
 </section>
 <section id="module-pipeline.transformed_target_pipeline">
-<span id="transformed-target"></span><h2>Transformed Target<a class="headerlink" href="#module-pipeline.transformed_target_pipeline" title="Permalink to this heading">¶</a></h2>
+<span id="transformed-target"></span><h2>Transformed Target<a class="headerlink" href="#module-pipeline.transformed_target_pipeline" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="pipeline.transformed_target_pipeline.TransformedTarget">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.transformed_target_pipeline.</span></span><span class="sig-name descname"><span class="pre">TransformedTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_inverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.transformed_target_pipeline.</span></span><span class="sig-name descname"><span class="pre">TransformedTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_inverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></p>
 <p>Class which wraps sklearn’s pipeline to accomodate transformers
 which modify both X and y. This transformation is required in
@@ -695,7 +602,7 @@ Time Series modelling tasks.</p>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.transformed_target_pipeline.TransformedTarget.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget.fit" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget.fit" title="Permalink to this definition"></a></dt>
 <dd><p>Fit the model.</p>
 <p>Fit all the transformers one after the other and transform the
 data. Finally, fit the transformed data using the final estimator.</p>
@@ -722,7 +629,7 @@ each parameter name is prefixed such that parameter <code class="docutils litera
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pipeline.transformed_target_pipeline.TransformedTarget.predict">
-<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">predict_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget.predict" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">predict_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget.predict" title="Permalink to this definition"></a></dt>
 <dd><p>Predict using the base regressor, applying inverse.
 The regressor is used to predict and the <cite>inverse_func</cite> or
 <cite>inverse_transform</cite> is applied before returning the prediction.
@@ -742,11 +649,6 @@ The regressor is used to predict and the <cite>inverse_func</cite> or
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pipeline.transformed_target_pipeline.TransformedTarget.steps">
-<span class="sig-name descname"><span class="pre">steps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#pipeline.transformed_target_pipeline.TransformedTarget.steps" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </section>
@@ -754,50 +656,33 @@ The regressor is used to predict and the <cite>inverse_func</cite> or
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="auto.html" class="btn btn-neutral float-right" title="Automation Pipeline" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="pipeline.html" class="btn btn-neutral float-left" title="Core Pipeline" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="auto.html" class="btn btn-neutral float-right" title="Automation Pipeline" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright .
-
-    </p>
+    <p>&#169; Copyright 2020, 2021, 2022 IBM Research.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
